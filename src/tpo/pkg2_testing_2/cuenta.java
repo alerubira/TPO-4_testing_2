@@ -17,21 +17,11 @@ public class cuenta {
         this.saldo=saldo;
     }
 
-    public int getNumeroCuenta() {
-        return numeroCuenta;
-    }
-
-    public void setNumeroCuenta(int numeroCuenta) {
-        this.numeroCuenta = numeroCuenta;
-    }
-
     public double getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
+   
     
     public double retirarDinero(double monto)throws Exception{
         if(monto>saldo){
