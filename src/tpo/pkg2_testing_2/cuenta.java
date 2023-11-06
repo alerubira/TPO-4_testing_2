@@ -7,7 +7,7 @@ package tpo.pkg2_testing_2;
  */
 public class cuenta {
     int numeroCuenta;
-  double saldo=2000;
+  double saldo=2000.0;
 
     public cuenta() {
     }
@@ -16,6 +16,23 @@ public class cuenta {
         this.numeroCuenta = numeroCuenta;
         this.saldo=saldo;
     }
+
+    public int getNumeroCuenta() {
+        return numeroCuenta;
+    }
+
+    public void setNumeroCuenta(int numeroCuenta) {
+        this.numeroCuenta = numeroCuenta;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+    
     public double retirarDinero(double monto)throws Exception{
         if(monto>saldo){
             throw new Exception("!!OJO!!No hay saldo suficiente!!");
