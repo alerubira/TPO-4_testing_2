@@ -28,8 +28,9 @@ public class cuenta {
             throw new Exception("!!OJO!!No hay saldo suficiente!!");
         }else{
             this.saldo-=monto;
+           
         }
-     return saldo;   
+        return saldo;
     }
     public void depositarDinero(cuenta c,double monto){
         c.saldo+=monto;
